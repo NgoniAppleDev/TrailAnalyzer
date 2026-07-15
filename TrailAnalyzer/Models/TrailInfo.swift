@@ -11,7 +11,7 @@ struct TrailInfo {
     
     var distance: Int?
     var elevation: Int?
-    var terrain: Terrain?
+    var terrain: Terrain? = .paved
     var wildlifeDangerLevel: Int = lowDanger
     
     static let lowDanger = 0

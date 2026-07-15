@@ -16,7 +16,6 @@ struct TrailTheme: ViewModifier {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .ignoresSafeArea()
-                    .offset(y: -140)
                 
                 Spacer()
             }
@@ -32,6 +31,12 @@ extension View {
     
     func trailTheme() -> some View {
         modifier(TrailTheme())
+    }
+}
+
+extension Color {
+    static var trailTheme: Color {
+        Color(red: 0.92, green: 0.32, blue: 0.25)
     }
 }
 

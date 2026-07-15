@@ -17,6 +17,8 @@ struct TrailField<Content: View>: View {
         HStack {
             Image(systemName: iconName)
                 .resizable()
+                .symbolRenderingMode(.hierarchical)
+                .foregroundStyle(Color.trailTheme.gradient)
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 40, height: 40)
                 .padding(.trailing, 8)
